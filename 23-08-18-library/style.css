@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-c: #ffc300;
+  --main-tint-n1: #ffd54d;
+
+  --accent-c: #ff5e00;
+  --accent-tint-n1: #660000;
+
+  --gray-c: #3b3b3b;
+  --gray-tint-n1: #656565;
+
+  --white-c: #fefbff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: white;
+  flex-direction: column;
+}
+
+p {
+  width: 48ch;
+  margin: 0 auto;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-c);
+}
+
+.card-box {
+  width: 65rem;
+  height: 40rem;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px #9c9c9c;
+  background-image: linear-gradient(
+      45deg,
+      hsla(323, 74%, 67%, 0.9),
+      hsla(13, 76%, 61%, 0.8),
+      hsla(13, 76%, 61%, 0.2)
+    ),
+    url(./bookcase-bookself.jpg);
+  background-size: contain;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  display: inline-block;
+  --icon-size: 20px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  fill: white;
+}
+
+.text-content {
+  margin: auto 0;
+}
+
+.card-title {
+  font-size: 6.2rem;
+  font-family: "Style Script", cursive;
+}
+
+.card-description {
+  letter-spacing: 0.9px;
+  margin: 0 auto 0;
+}
+
+.btn {
+  margin: 3.6rem 0 1.6rem 0;
+  appearance: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #ff5e00;
+  padding: 1.6rem 3.6rem;
+  border-radius: 99px;
+}
+
+.card-note {
+  letter-spacing: 1px;
+
+  font-size: 1.2rem;
+}

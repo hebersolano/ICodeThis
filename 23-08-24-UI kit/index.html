@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="item header-section">
+        <nav class="navbar">
+          <ul class="navbar-list" role="list">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">Works</a></li>
+            <li><a class="nav-link" href="#">Support</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <div class="search-box">
+            <!-- prettier-ignore -->
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+
+            <input class="search-field" type="text" placeholder="Search" />
+          </div>
+        </nav>
+      </section>
+
+      <!-- SIGN-IN SECTION -->
+      <section class="item signIn-section">
+        <div class="img-signIn">
+          <div class="img-text-box">
+            <h2>Aliquam etiam</h2>
+            <p>nulla, metus mattis mollis pulvinar sapien amet sit aget</p>
+          </div>
+        </div>
+
+        <div class="signIn-box">
+          <h2 class="signIn-title">SIGN IN</h2>
+          <form class="signIn-form flex flex-col" action="">
+            <div class="flex flex-col flex-min-gap">
+              <div class="field-box">
+                <!-- prettier-ignore -->
+                <svg class="icon-signIn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <input class="field-input" type="text" placeholder="Email" />
+              </div>
+
+              <div class="field-box">
+                <!-- prettier-ignore -->
+                <svg class="icon-signIn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+                <input class="field-input" type="text" placeholder="Password" />
+              </div>
+              <div class="field-box field-checkbox">
+                <input type="checkbox" name="remenber-user" id="remenber-user" />
+                <label for="remenber-user">Remenber me</label>
+              </div>
+            </div>
+
+            <div class="flex flex-col flex-min-gap">
+              <button class="btn">Sign In</button>
+              <div class="account-opt-box flex">
+                <a class="link min-link" href="#">Create Account</a>
+                <a class="link min-link" href="#">Forgot password</a>
+              </div>
+            </div>
+            <p class="text-gray">or connect with</p>
+            <div class="flex flex-col flex-min-gap">
+              <a href="#" class="btn btn-facebook">Facebook</a>
+              <a href="#" class="btn btn-gmail">Gmail</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- CALENDAR SECTION -->
+      <section class="item calendar flex flex-col">
+        <div class="calendar-header">
+          <div class="day">
+            <p class="day-num">3</p>
+            <p class="day-txt">FRIDAY</p>
+          </div>
+          <div class="today-date flex">
+            <!-- prettier-ignore -->
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+
+            <p>March 2017</p>
+
+            <!-- prettier-ignore -->
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="calendar-table">
+          <span class="day-of-week">SUN</span>
+          <span class="day-of-week">MON</span>
+          <span class="day-of-week">TUE</span>
+          <span class="day-of-week">WED</span>
+          <span class="day-of-week">THU</span>
+          <span class="day-of-week">FRI</span>
+          <span class="day-of-week">SAT</span>
+
+          <span class="date text-gray">26</span><span class="date text-gray">27</span
+          ><span class="date text-gray">28</span><span class="date">1</span
+          ><span class="date">2</span><span class="date">3</span><span class="date">4</span
+          ><span class="date">5</span><span class="date">6</span><span class="date">7</span
+          ><span class="date">8</span><span class="date">9</span><span class="date">10</span
+          ><span class="date">11</span><span class="date">12</span><span class="date">13</span
+          ><span class="date">14</span><span class="date">15</span><span class="date">16</span
+          ><span class="date">17</span><span class="date">18</span><span class="date">19</span
+          ><span class="date">20</span><span class="date">21</span><span class="date">22</span
+          ><span class="date">23</span><span class="date">24</span><span class="date">25</span
+          ><span class="date">26</span><span class="date">27</span><span class="date">28</span
+          ><span class="date">29</span><span class="date">30</span><span class="date">31</span
+          ><span class="date text-gray">1</span>
+        </div>
+      </section>
+      <section class="item user flex flex-col">
+        <div class="user-profile flex">
+          <img class="user-picture" src="./perfil-jonh.jpg" alt="" />
+
+          <div class="user-info">
+            <p class="username">Jonh C. Mankey</p>
+            <p class="user-location text-gray">UK, Londom</p>
+          </div>
+        </div>
+        <div class="user-data">
+          <div class="flex flex-col">
+            <p class="txt-bold">14,586</p>
+            <p>Followers</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="txt-bold">9,753</p>
+            <p>Following</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="txt-bold">547</p>
+            <p>Photos</p>
+          </div>
+        </div>
+        <div class="flex follow-box">
+          <a href="#" class="btn follow">Follow</a>
+        </div>
+      </section>
+      <section class="item gallery flex flex-col">
+        <div class="cont-header">
+          <h2>Gallery</h2>
+          <p>#loremtag</p>
+        </div>
+        <div class="slider">
+          <div><img class="img-g img-1 img-2nd" src="landscape-1.jpg" alt="" /></div>
+          <div><img class="img-g img-2 img-1ft" src="landscape-2.jpg" alt="" /></div>
+          <div><img class="img-g img-3 img-2nd" src="landscape-3.jpg" alt="" /></div>
+        </div>
+      </section>
+    </div>
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>

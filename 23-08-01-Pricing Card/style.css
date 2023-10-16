@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  /* height: 100vh;
+  width: 100vw; */
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #2d2b53;
+  background-color: #28264b;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-cards {
+  /* display: flex; */
+  width: 120rem;
+  /* height: 60rem; */
+  margin: 4vw auto;
+  padding: 8rem;
+  background-color: #fefafa;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+}
+
+.card {
+  max-width: 30rem;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 1.2rem;
+  transition: all 300ms;
+}
+
+.card-free {
+  box-shadow: 0 18px 10px -10px #c4d4fc;
+}
+.card-free:hover {
+  box-shadow: 0 0 1px 1px black;
+  transform: translateY(-5px);
+  box-shadow: 0 28px 10px -15px #c4d4fc;
+}
+
+.card-lite {
+  transform: translateY(-20px);
+  box-shadow: 0 18px 10px -10px rgba(183, 116, 255, 0.6);
+}
+.card-lite:hover {
+  transform: translateY(-28px);
+  box-shadow: 0 28px 10px -15px rgba(183, 116, 255, 0.6);
+}
+
+.card-pro {
+  box-shadow: 0 18px 10px -10px rgba(255, 200, 112, 0.6);
+}
+.card-pro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 28px 10px -15px rgba(255, 200, 112, 0.6);
+}
+
+.title {
+  padding: 1.6rem 0;
+  margin-bottom: 4.8rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.title-free {
+  background: linear-gradient(90deg, #f9fafe, #c6d3ff);
+}
+
+.title-lite {
+  color: #fff;
+  background: linear-gradient(90deg, #c6d3ff, #b774ff);
+}
+
+.title-pro {
+  color: #fff;
+  background: linear-gradient(90deg, #ffb3ca, #ffc970);
+}
+
+.content {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: center;
+}
+
+.price-p {
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 4.8rem;
+  align-self: end;
+  height: fit-content;
+  position: relative;
+}
+
+.price::before {
+  content: "$";
+  font-size: 2rem;
+  position: absolute;
+  left: -0.6em;
+}
+.price::after {
+  content: "/mo";
+  font-size: 1.6rem;
+}
+
+.dollar {
+  display: none;
+}
+
+.per-month {
+  display: none;
+  align-self: end;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  margin-top: 2rem;
+  background: none;
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+  box-shadow: inset 0 0 0 1px #28264b;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  box-shadow: none;
+}
+
+.btn-free:hover {
+  background: #c6d3ff;
+}
+
+.btn-lite {
+  color: #fff;
+  background: #28264b;
+}
+.btn-lite:hover {
+  color: #28264b;
+  background: rgba(183, 116, 255, 0.6);
+}
+
+.btn-pro:hover {
+  background: rgba(255, 200, 112, 0.6);
+}
+
+.features {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+  margin-bottom: 2.4rem;
+}
+
+.features li {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.icon[name="checkmark-outline"] {
+  color: green;
+}
+
+.icon[name="close-outline"] {
+  color: red;
+}

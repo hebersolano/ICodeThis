@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-c: #ffc300;
+  --main-tint-n1: #ffd54d;
+
+  --accent-c: #ff5e00;
+  --accent-tint-n1: #660000;
+
+  --gray-c: #3b3b3b;
+  --gray-tint-n1: #656565;
+}
+
+body {
+  font-size: 62.5%;
+  color: #333;
+}
